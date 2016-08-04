@@ -20,10 +20,8 @@ public abstract class BaseActivity<V, T extends BasePresenter<V>> extends AppCom
         this.mContext = this;
         this.mPresenter = initPresenter();
         this.mPresenter.attach((V) this);
-        onActivityCreate(savedInstanceState);
     }
 
-    protected abstract void onActivityCreate(Bundle savedInstanceState);
 
     protected abstract T initPresenter();
 

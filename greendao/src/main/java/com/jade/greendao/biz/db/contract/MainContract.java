@@ -1,17 +1,17 @@
-package com.jade.mvp.biz.login;
+package com.jade.greendao.biz.db.contract;
 
 import com.jade.library.mvp.BasePresenter;
 import com.jade.library.mvp.BaseView;
 
 /**
- * Created by jade on 16-8-3.
+ * Created by jade on 16-8-4.
  */
-public interface Contract {
+public interface MainContract {
     interface View extends BaseView {
+
     }
 
     interface Presenter extends BasePresenter<View> {
 
-        void login(String name, String password);
     }
 }

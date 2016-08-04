@@ -1,1 +1,1 @@
-include ':library', ':mvp'
+include ':library', ':mvp', ':greendao'

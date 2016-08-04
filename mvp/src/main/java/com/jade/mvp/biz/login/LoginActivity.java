@@ -31,11 +31,6 @@ public class LoginActivity extends BaseActivity<Contract.View, MainPresenter> im
     }
 
     @Override
-    protected void onActivityCreate(Bundle savedInstanceState) {
-        setContentView(R.layout.activity_login);
-    }
-
-    @Override
     protected MainPresenter initPresenter() {
         return new MainPresenter();
     }
@@ -43,8 +38,9 @@ public class LoginActivity extends BaseActivity<Contract.View, MainPresenter> im
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
+        setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        getSupportActionBar().setTitle(getResources().getString(R.string.user_login));
     }
 
     @Override
